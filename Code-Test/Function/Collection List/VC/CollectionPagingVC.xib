@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectionPagingVC" customModule="Code_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="addCollection" destination="QO5-Qi-aF9" id="DHM-kG-L27"/>
+                <outlet property="contentView" destination="Gzd-4q-pGY" id="Ee4-l7-YTh"/>
+                <outlet property="pagingView" destination="aFu-ah-VvN" id="hAA-h6-MIi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QO5-Qi-aF9">
+                    <rect key="frame" x="340" y="47" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QO5-Qi-aF9" secondAttribute="height" multiplier="1:1" id="KfI-gC-gi9"/>
+                        <constraint firstAttribute="width" constant="50" id="geC-sJ-gYl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="plus" catalog="system"/>
+                    <connections>
+                        <action selector="addCollection:" destination="-1" eventType="touchUpInside" id="fe1-vh-40S"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFu-ah-VvN">
+                    <rect key="frame" x="0.0" y="47" width="340" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gzd-4q-pGY">
+                    <rect key="frame" x="0.0" y="97" width="390" height="713"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QO5-Qi-aF9" secondAttribute="trailing" id="82r-UZ-QOJ"/>
+                <constraint firstItem="QO5-Qi-aF9" firstAttribute="leading" secondItem="aFu-ah-VvN" secondAttribute="trailing" id="E0e-r7-npq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gzd-4q-pGY" secondAttribute="trailing" id="EDs-aw-FSe"/>
+                <constraint firstItem="aFu-ah-VvN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="HkP-LT-H1k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Gzd-4q-pGY" secondAttribute="bottom" id="HpP-yF-DeR"/>
+                <constraint firstItem="Gzd-4q-pGY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="I9V-eV-dIt"/>
+                <constraint firstItem="aFu-ah-VvN" firstAttribute="bottom" secondItem="QO5-Qi-aF9" secondAttribute="bottom" id="aya-2T-ACE"/>
+                <constraint firstItem="QO5-Qi-aF9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mfH-0f-oju"/>
+                <constraint firstItem="Gzd-4q-pGY" firstAttribute="top" secondItem="aFu-ah-VvN" secondAttribute="bottom" id="nr0-gr-cvj"/>
+                <constraint firstItem="aFu-ah-VvN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qxO-c7-s6P"/>
+            </constraints>
+            <point key="canvasLocation" x="22" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

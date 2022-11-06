@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="AlbummsCell" customModule="Code_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kxm-4z-1EZ">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Kxm-4z-1EZ" secondAttribute="height" multiplier="1:1" id="aHt-uj-HMO" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                            <constraint firstAttribute="height" constant="50" id="u9s-kK-yjK" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Oi-yh-ash">
+                        <rect key="frame" x="70" y="10" width="41.333333333333343" height="40.333333333333336"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxs-ss-kcx">
+                                <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSC-Gz-q6I">
+                                <rect key="frame" x="0.0" y="20.333333333333332" width="41.333333333333336" height="19.999999999999996"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="cxR-pb-RS0" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp5-gG-06u">
+                        <rect key="frame" x="368.66666666666669" y="25" width="41.333333333333314" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5Oi-yh-ash" secondAttribute="bottom" priority="750" id="E1Q-BV-bml" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Kxm-4z-1EZ" secondAttribute="bottom" constant="10" id="Ith-mL-VHI" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                    <constraint firstItem="Kxm-4z-1EZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NXV-gC-KDW" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                    <constraint firstItem="Kxm-4z-1EZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Txh-x3-HtB" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                    <constraint firstItem="jp5-gG-06u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5Oi-yh-ash" secondAttribute="trailing" constant="5" id="pya-lg-2dG" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                    <constraint firstItem="5Oi-yh-ash" firstAttribute="leading" secondItem="Kxm-4z-1EZ" secondAttribute="trailing" constant="10" id="rSu-At-jcS" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                    <constraint firstItem="5Oi-yh-ash" firstAttribute="top" secondItem="Kxm-4z-1EZ" secondAttribute="top" id="sZf-Ph-8FX" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                    <constraint firstAttribute="trailing" secondItem="jp5-gG-06u" secondAttribute="trailing" constant="10" id="w4w-rg-jwy" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                    <constraint firstItem="jp5-gG-06u" firstAttribute="centerY" secondItem="Kxm-4z-1EZ" secondAttribute="centerY" id="zMR-SA-RRw" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistLabel" destination="TSC-Gz-q6I" id="KCs-Kb-Z55"/>
+                <outlet property="headlineLabel" destination="Kxs-ss-kcx" id="kg0-cn-ueD"/>
+                <outlet property="priceLabel" destination="jp5-gG-06u" id="UHz-ww-q4T"/>
+                <outlet property="thumbnailIV" destination="Kxm-4z-1EZ" id="PUC-A4-TsJ"/>
+            </connections>
+            <point key="canvasLocation" x="195" y="34"/>
+        </tableViewCell>
+    </objects>
+</document>

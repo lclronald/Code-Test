@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectionListVC" customModule="Code_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="addCollectionBtn" destination="e2j-De-OFT" id="rnD-ry-BXt"/>
+                <outlet property="tv" destination="59H-VD-Aqt" id="46v-pF-adB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="59H-VD-Aqt">
+                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2j-De-OFT">
+                    <rect key="frame" x="145" y="397" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bBs-CD-jB2" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                        <constraint firstAttribute="width" constant="100" id="jno-gG-VtN" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="addCollectionClick:" destination="-1" eventType="touchUpInside" id="Caj-lG-FPs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="59H-VD-Aqt" secondAttribute="bottom" id="3fo-VL-fbc" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                <constraint firstItem="59H-VD-Aqt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HBn-vf-rgN" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                <constraint firstItem="e2j-De-OFT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PIm-Bb-0AB" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                <constraint firstItem="e2j-De-OFT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Qcm-mq-in2" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                <constraint firstItem="59H-VD-Aqt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wEe-i4-5od" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="59H-VD-Aqt" secondAttribute="trailing" id="wWb-RK-HaW" customClass="RelativeConstraint" customModule="Code_Test" customModuleProvider="target"/>
+            </constraints>
+            <point key="canvasLocation" x="122" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
