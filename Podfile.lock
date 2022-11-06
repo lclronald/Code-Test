@@ -1,0 +1,87 @@
+PODS:
+  - Alamofire (5.6.2)
+  - CocoaLumberjack (3.8.0):
+    - CocoaLumberjack/Core (= 3.8.0)
+  - CocoaLumberjack/Core (3.8.0)
+  - Differentiator (5.0.0)
+  - MJRefresh (3.7.5)
+  - ObjectMapper (4.2.0)
+  - PagingKit (1.18.1)
+  - Realm (3.16.2):
+    - Realm/Headers (= 3.16.2)
+  - Realm/Headers (3.16.2)
+  - RealmSwift (3.16.2):
+    - Realm (= 3.16.2)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+  - SDWebImageSVGKitPlugin (1.4.0):
+    - SDWebImage/Core (~> 5.10)
+    - SVGKit (~> 3.0)
+  - SnapKit (5.6.0)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
+
+DEPENDENCIES:
+  - Alamofire (= 5.6.2)
+  - MJRefresh (= 3.7.5)
+  - ObjectMapper
+  - PagingKit
+  - RealmSwift (= 3.16.2)
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+  - SDWebImage (= 5.13.2)
+  - SDWebImageSVGKitPlugin (= 1.4)
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaLumberjack
+    - Differentiator
+    - MJRefresh
+    - ObjectMapper
+    - PagingKit
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SDWebImageSVGKitPlugin
+    - SnapKit
+    - SVGKit
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  PagingKit: 0e7ec4e3791ab55887e129b27f7486a91b761129
+  Realm: 0e73b4edeb5b6a90da3d83206883b2e34e00eb38
+  RealmSwift: a81e650171ef0a5f999df1ed8d39ba8d6fce88a4
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+  SDWebImageSVGKitPlugin: 7542dd07c344ec3415ded0461a1161a6f087e0c9
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
+
+PODFILE CHECKSUM: e2f5171acb4579bae49a79051f7c91e88a18686b
+
+COCOAPODS: 1.11.3

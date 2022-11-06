@@ -31,6 +31,7 @@ class AlbumsListVC: BaseVC {
         self.title = "Albums List"
     }
     private func setupTv() {
+        self.tv.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: self.tv.frame.width, height: .leastNonzeroMagnitude))
         self.tv.register(AlbummsCell.self)
         self.tv.rx.setDelegate(self).disposed(by: self.disposeBag)
         self.tv.mj_header = self.setupMJHeader(action: #selector(self.refresh))

@@ -14,6 +14,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
+        
+        if #available(iOS 15.0, *) {
+            UITableView.appearance().sectionHeaderTopPadding = CGFloat(0)
+            UITableView.appearance().sectionFooterHeight = CGFloat(0)
+        }
+        
         RootRouter.shared.startup(window)
         self.window = window
     }
