@@ -35,15 +35,15 @@ PODS:
 DEPENDENCIES:
   - Alamofire (= 5.6.2)
   - MJRefresh (= 3.7.5)
-  - ObjectMapper
-  - PagingKit
+  - ObjectMapper (= 4.2.0)
+  - PagingKit (= 1.18.1)
   - RealmSwift (= 3.16.2)
-  - RxCocoa
-  - RxDataSources
-  - RxSwift
+  - RxCocoa (= 6.5.0)
+  - RxDataSources (= 5.0.0)
+  - RxSwift (= 6.5.0)
   - SDWebImage (= 5.13.2)
   - SDWebImageSVGKitPlugin (= 1.4)
-  - SnapKit
+  - SnapKit (= 5.6.0)
 
 SPEC REPOS:
   trunk:
@@ -82,6 +82,6 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
 
-PODFILE CHECKSUM: e2f5171acb4579bae49a79051f7c91e88a18686b
+PODFILE CHECKSUM: 199bfc829dd7e0fc2d83534bdaf552104eaa0b99
 
 COCOAPODS: 1.11.3
